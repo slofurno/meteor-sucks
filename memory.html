@@ -1,0 +1,30 @@
+<head>
+  <title>simple-boats</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  <input type="text" id="todoname">
+
+  {{> hello}}
+
+  <ul>
+
+  {{#each tasks}}
+    {{> task}}
+  {{/each}}
+
+</ul>
+
+</body>
+
+<template name="task">
+
+  <li>{{name}}</li>
+
+</template>
+
+<template name="hello">
+  <button>add to list</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
